@@ -37,17 +37,17 @@ After that go to Permissions tab and change Block all public access to off.
 
 After that go to “Bucket Policy” tab and insert following policy and save it. Enter the name of your bucket at resource attribute by replacing “your_bucket_name” with bucket name.
 
-{
-“Version”: “2012–10–17”,
-“Statement”: [
-{
-“Sid”: “PublicReadGetObject”,
-“Effect”: “Allow”,
-“Principal”: “*”,
-“Action”: “s3:GetObject”,
-“Resource”: “arn:aws:s3:::your_bucket_name/*”
-}
-]
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::risingstarbucket/*"
+        }
+    ]
 }
 
 Finally go to “CORS configuration” tab and insert this information and save it.
