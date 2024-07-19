@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# How i made Rising Star
 
 
 1-AWS Codecommit repository as code source
